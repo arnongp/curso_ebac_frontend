@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.form-methods {
+  font-size: 20px;
+}
+
