@@ -5,27 +5,23 @@ function validaFormulario(campo1, campo2) {
   let numero1 = parseInt(campo1)
   let numero2 = parseInt(campo2)
   formularioEValido = numero2 > numero1
-  console.log(formularioEValido)
-  console.log(numero1)
-  console.log(numero2)
   return formularioEValido
 }
 
-validaFormulario(31, 61)
+validaFormulario(41, 121)
 
 form.addEventListener('submit', function (e) {
   e.preventDefault()
 
   if (formularioEValido) {
-    //const containerMensagemSucesso = document.querySelector('.success-message')
-    //containerMensagemSucesso.innerHTML = mensagemDeSucesso
-    //containerMensagemSucesso.style.display = 'block'
-
-    CampoA.value = ''
-    CampoB.value = ''
-    mensagem.value = ''
-    console.log('deu bom')
+    document.querySelector('#message').innerHTML = 'Formulário Válido'
+    console.log('Formulário Válido')
+    campoA.value = ''
+    campoB.value = ''
   } else {
-    console.log('deu ruim')
+    document.querySelector('#message').innerHTML = 'Formulário Inválido'
+    console.log('Formulário Inválido')
+    campoA.value = ''
+    campoB.value = ''
   }
 })
