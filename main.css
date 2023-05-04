@@ -28,6 +28,14 @@ form {
   align-items: center;
 }
 
+.alert {
+  padding: 5px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  background-color:  rgb(246, 242, 137);
+  border-radius: 5px;
+}
+
 label {
   margin-bottom: 5px;
   font-size: 15px;
@@ -56,4 +64,18 @@ button {
 input {
   margin-bottom: 18px;
   text-align: center;
+}
+
+.success {
+  color: rgb(255, 255, 255);
+  background-color: rgb(3, 118, 3);
+  font-weight: bold;
+  padding: 8px;
+}
+
+.error {
+  color: rgb(255, 255, 255);
+  background-color: rgb(187, 3, 3);
+  font-weight: bold;
+  padding: 8px;
 }

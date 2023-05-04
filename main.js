@@ -10,12 +10,34 @@ function validaForm(numero2, numero1) {
 
 form.addEventListener('submit', function (e) {
   e.preventDefault()
+
+  const containerMessage = document.querySelector('.message-form')
+
+  if (formEValido) {
+    containerMessage.innerHTML = 'Formulário é válido'
+    containerMessage.classList.add('success')
+    containerMessage.classList.remove('error')
+    campoA.value = ''
+    campoB.value = ''
+  } else {
+    containerMessage.innerHTML = 'Formulário inválido'
+    containerMessage.classList.add('error')
+    containerMessage.classList.remove('success')
+    campoA.value = ''
+    campoB.value = ''
+  }
 })
 
-campoB.addEventListener('keyup', function (e) {
-  console.log(e.target.value)
-  console.log(campoA.value)
+campoA.addEventListener |
+  campoB.addEventListener('keyup', function (e) {
+    formEValido = validaForm(campoB.value, campoA.value)
 
-  console.log(validaForm(130, 120))
-  console.log(campoA.value)
-})
+    if (!formEValido) {
+      document.querySelector('.message-alert').classList.add('alert')
+      document.querySelector('.message-alert').style.display = 'block'
+      document.querySelector('.message-alert').innerHTML =
+        'Campo B deve ser maior que Campo A'
+    } else {
+      document.querySelector('.message-alert').style.display = 'none'
+    }
+  })
