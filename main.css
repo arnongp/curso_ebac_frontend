@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 234, 211);
+}
+
+
+header h1 {
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  display: block;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.form-input label {
+  display: block;
+  font-weight: bold;
+}
+
+label {
+  padding: 3px 0;
+  font-size: 14px;
+}
+
+input {
+  width: 50%;
+  border: 1px solid black;
+  background-color: rgb(237, 237, 237);
+  font-size: 14px;
+  padding: 3px;
+}
+
+#endereco {
+  height: 80px;
+}
+
+.btn {
+  display: flex;
+  justify-content: left;
+}
+
+.btn {
+  padding: 4px;
+}
+
+.btn button {
+  padding: 4px 12px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(70, 4, 4);
+  color: rgb(253, 234, 211);
+  cursor: pointer;
+}
