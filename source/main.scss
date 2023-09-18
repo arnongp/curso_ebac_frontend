@@ -1,0 +1,101 @@
+@use 'config/reset.scss';
+@use 'config/variaveis.scss';
+
+@mixin displayType($display: flex) {
+  display: $display;
+}
+
+body {
+  background-color: variaveis.$corFundoBody;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: variaveis.$corFundoHeader;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .menu {
+    @include displayType(flex);
+    li {
+      list-style: none;
+      font-weight: bold;
+      margin-left: 24px;
+      a {
+        color: variaveis.$corPrincipal;
+        text-decoration: none;
+      }
+    } 
+  }
+
+  .container {
+    @include displayType(flex);
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+
+section {
+  padding: 56px 0;  
+}
+
+.products {
+  margin-top: 40px;
+  @include displayType(grid);
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.product-button {
+  @include displayType(block);
+  background-color: variaveis.$corFundoBotao;
+  color: variaveis.$corPrincipal;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: variaveis.$corBotaoHover;
+  }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+  .container {
+      max-width: 80%;
+  }
+
+  .products {
+      grid-template-columns: repeat(2, 48.5%);
+      column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+  .products {
+    @include displayType(block);
+  }
+
+  .product-item  {
+      margin-bottom: 32px;
+  }
+}
