@@ -137,6 +137,7 @@ module.exports = function (grunt) {
     'less:production',
     'htmlmin:dist',
     'replace:dist',
+    'clean',
     'uglify'
   ])
 }
