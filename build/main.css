@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+.button {
+  width: 100px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button#red {
+  background-color: #5c1515;
+  color: #f0c9c9;
+}
+.button#yellow {
+  background-color: #6f4909;
+  color: #fde7c2;
+}
+.button#green {
+  background-color: #063402;
+  color: #c4ffbf;
+}
+.button#automatic {
+  background-color: #f0f0f0;
+  color: #303030;
+  border: 1px solid #303030;
+}

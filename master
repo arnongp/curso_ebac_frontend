@@ -1,0 +1,23 @@
+[33mcommit 349f269cdf5e3e532c3ff1c7a3298725978670ce[m[33m ([m[1;36mHEAD -> [m[1;32mexercicio_grunt[m[33m, [m[1;31morigin/exercicio_grunt[m[33m)[m
+Author: Arnon Paiva <arnongp@gmail.com>
+Date:   Fri Oct 20 11:12:56 2023 -0300
+
+    deletado arquivo style.css pertencente ao projeto original e incluida a task clean novamente em build
+
+[33mcommit 74952ee21d21ff0682191b259bf1e16e307be262[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Arnon Paiva <arnongp@gmail.com>
+Date:   Fri Oct 20 10:39:10 2023 -0300
+
+    tentativa de rodar o projeto, travado em main.js, não roda a alteração de imagens
+
+[33mcommit b16e4e2d1a590797120cc2e9da21da69eb43267e[m
+Author: Arnon Paiva <arnongp@gmail.com>
+Date:   Fri Oct 20 07:59:58 2023 -0300
+
+    commit inicio projeto
+
+[33mcommit e907ecb26d2d0c3d76184f471c01ec896cbd390d[m
+Author: Arnon Paiva <arnongp@gmail.com>
+Date:   Thu Oct 19 10:32:11 2023 -0300
+
+    projeto inicial original
